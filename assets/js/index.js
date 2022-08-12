@@ -10,6 +10,7 @@ $(function() {
           });
     })
 })
+// 获取用户信息
 function getUserInfo() {
     $.ajax({
         method:'get',
@@ -34,7 +35,7 @@ function getUserInfo() {
 
     })
 }
-
+// 渲染用户头像
 function renderAvatar(user) {
     let name = user.nickname || user.username
     $('.welcome').html('欢迎&nbsp;&nbsp;' + name)
